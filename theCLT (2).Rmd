@@ -19,7 +19,8 @@ densityplot(my1000,main="original data")
 
 ```
 
-Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size?   
+Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size?  
+The Plot is Bi-modal. It has two peaks that are about the same in size.   
 
 Now take 2 random samples of 1000 points of the kkardashtemp variable and form 1000 points of their averages,
 
@@ -31,8 +32,9 @@ x.avg <- apply(mdata,1,mean)
 densityplot(x.avg,main="sample size 2")
 ```
 
-Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size? 
+Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size?   
 
+This graph appears to me to be trimodal with a central peak.
  
 
 Do this again for 4 random samples
