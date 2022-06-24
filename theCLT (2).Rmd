@@ -51,7 +51,7 @@ print(mean(x.avg))
 print(sd(x.avg))
 ```
 
-The graph appears to be multimodal with one central peak with additional peaks on either side. The peaks appear symmetrical. The mean is 50.52075 and the sdtandard deviation is 20.28417.  
+The graph appears to be multimodal with one central peak with additional peaks on either side. The peaks appear symmetrical. The mean is 50.52075 and the standard deviation is 20.28417.  
 
 Then again for 9 random samples   
 
@@ -65,7 +65,7 @@ print(mean(x.avg))
 print(sd(x.avg))
 ```
 
-This graph appears to be unimodal and symetrical. The mean is 50.06933 and the standarddeviation is 13.55676.  
+This graph appears to be unimodal and symmetrical. The mean is 50.06933 and the standard deviation is 13.55676.  
 
 then 16 random samples    
 
@@ -79,7 +79,7 @@ print(mean(x.avg))
 print(sd(x.avg))
 ```
 
-The graph apears to be unimodal. The mean of this graph is 50.23419 with astandad deviation of 10.25553.
+The graph apears to be unimodal. The mean of this graph is 50.23419 with standard deviation of 10.25553.
 
 finally for 36 random samples    
 
@@ -93,11 +93,12 @@ print(mean(x.avg))
 print(sd(x.avg))
 ```
 
-This graph is unimodal. The mean is 50.10706 and the standadrd deviation is 6.698767.
+This graph is unimodal. The mean is 50.10706 and the standard deviation is 6.698767.
 
 Write a summary paragraph describing what you observed and how it relates to the central limit theorem.  
-Be sure to comment on both the mean and standard deviation of the sample averages - the CLT makes a statement about what to expect from both. 
-The central peak of the graph appears to be more populated then the outer portions of the peak. 
+Be sure to comment on both the mean and standard deviation of the sample averages - the CLT makes a statement about what to expect from both.  
+The central peak of the graph appears to be more populated then the outer portions of the peak. What I expect is that the mean stay at the original data number of 50. I expect that the standard deviation change. The new standard deviation is the result of the original standard deviation divided by the square root of the number of the sample size.  
+
 
 
 Then submit the link to your github project  to canvas to complete this assignment.
