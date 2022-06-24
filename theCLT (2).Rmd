@@ -16,7 +16,8 @@ data("imagpop")
 KK_data <- imagpop$kkardashtemp
 my1000 <- sample(KK_data, size = 1000, replace=T)
 densityplot(my1000,main="original data")
-
+print(mean(KK_data))
+print(sd(KK_data))
 ```
 
 Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size?  
@@ -30,6 +31,8 @@ Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
 densityplot(x.avg,main="sample size 2")
+print(mean(x.avg))
+print(sd(x.avg))
 ```
 
 Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size?   
@@ -41,10 +44,12 @@ numb = 4
 Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
-densityplot(x.avg,main="sample size 2")
+densityplot(x.avg,main="sample size 4")
+print(mean(x.avg))
+print(sd(x.avg))
 ```
 
-Then again for 9 random samples 
+Then again for 9 random samples   
 The graph appears to be trimodal with one central peak
 
 ```{r}
@@ -52,10 +57,12 @@ numb = 9
 Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
-densityplot(x.avg,main="sample size 2")
+densityplot(x.avg,main="sample size 9")
+print(mean(x.avg))
+print(sd(x.avg))
 ```
 
-then 16 random samples  
+then 16 random samples    
 This graph appears to be unimodal.
 
 ```{r}
@@ -63,23 +70,26 @@ numb = 16
 Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
-densityplot(x.avg,main="sample size 2")
+densityplot(x.avg,main="sample size 16")
+print(mean(x.avg))
+print(sd(x.avg))
 ```
 
-finally for 36 random samples  
-This graph appears to be unimodal
+finally for 36 random samples    
+This graph appears to be unimodal.
 
 ```{r}
 numb = 36
 Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
-densityplot(x.avg,main="sample size 2")
+densityplot(x.avg,main="sample size 36")
+print(mean(x.avg))
+print(sd(x.avg))
 ```
 
 Write a summary paragraph describing what you observed and how it relates to the central limit theorem.  
-Be sure to comment on both the mean and standard deviation of the sample averages - the CLT makes a statement about what to expect from both.
+Be sure to comment on both the mean and standard deviation of the sample averages - the CLT makes a statement about what to expect from both.  
 
- 
 
 Then submit the link to your github project  to canvas to complete this assignment.
