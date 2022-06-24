@@ -21,7 +21,8 @@ print(sd(KK_data))
 ```
 
 Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size?  
-The Plot is Bi-modal. It has two peaks that are about the same in size.   
+
+The Plot is Bi-modal. It has two peaks that are approximatley the same in size.  The mean is 50.4003 with a standard deviation of 41.75955
 
 Now take 2 random samples of 1000 points of the kkardashtemp variable and form 1000 points of their averages,
 
@@ -35,8 +36,9 @@ print(mean(x.avg))
 print(sd(x.avg))
 ```
 
-Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size?   
-This graph appears to me to be trimodal with a central peak.  
+Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size?      
+
+This graph appears to be trimodal with a central peak. The graph shows two peaks on either side of the central peak. The mean is 51.4985 with a standard devistion of 29.4555
 
 Do this again for 4 random samples  
 ```{r}
@@ -49,8 +51,9 @@ print(mean(x.avg))
 print(sd(x.avg))
 ```
 
+The graph appears to be multimodal with one central peak with additional peaks on either side. The peaks appear symetrical. The mean is 49.876 and the sdtandard deviation is 20.51154.  
+
 Then again for 9 random samples   
-The graph appears to be trimodal with one central peak
 
 ```{r}
 numb = 9
@@ -62,8 +65,9 @@ print(mean(x.avg))
 print(sd(x.avg))
 ```
 
+This graph appears to be unimodal and symetrical. The mean is 51.38078 and the standarddeviation is 14.15083.  
+
 then 16 random samples    
-This graph appears to be unimodal.
 
 ```{r}
 numb = 16
@@ -75,8 +79,9 @@ print(mean(x.avg))
 print(sd(x.avg))
 ```
 
+The graph apears to be unimodal. The mean of this graph is 50.28794 with astandad deviation of 10.58187.
+
 finally for 36 random samples    
-This graph appears to be unimodal.
 
 ```{r}
 numb = 36
@@ -87,6 +92,8 @@ densityplot(x.avg,main="sample size 36")
 print(mean(x.avg))
 print(sd(x.avg))
 ```
+
+This graph is unimodal. The mean is 49.80406 and the standadrd deviation is 6.87269.
 
 Write a summary paragraph describing what you observed and how it relates to the central limit theorem.  
 Be sure to comment on both the mean and standard deviation of the sample averages - the CLT makes a statement about what to expect from both.  
